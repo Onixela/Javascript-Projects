@@ -1,0 +1,295 @@
+/* Карточки | Проект 1 */
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+body {
+  margin: 0;
+}
+
+.Name {
+  top: 0.6em;
+  position: absolute;
+  transform: translate(0, -50%);
+  text-decoration-line: underline;
+  text-decoration-color: #6feeec;
+}
+.cards {
+  font-family: 'Muli', sans-serif;
+  overflow: hidden;
+  margin: 0;
+  background-color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  display: flex;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  padding: 0 20px;
+  position: relative;
+}
+
+.slide {
+  height: 80vh;
+  border-radius: 20px;
+  margin: 10;
+  cursor: pointer;
+  color: white;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  transition: all 500ms ease-in-out;
+}
+
+.slide h3 {
+  position: absolute;
+  font-size: 24px;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+
+.slide.active {
+  flex: 10;
+}
+
+.slide.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+/* ******** */
+
+/* Drag & Drop | Проект 2 */
+* {
+  box-sizing: border-box;
+}
+
+.dragndrop {
+  text-decoration-line: underline;
+  text-decoration-color: #6feeec;
+  top: 1.5em;
+  position: absolute;
+  transform: translate(0, -50%);
+}
+
+.gunno {
+  font-family: 'Muli', sans-serif;
+  background-color: #fffde7;
+  display: flex;
+  padding-top: 7rem;
+  justify-content: center;
+  overflow: hidden;
+  margin: 0;
+  position: relative;
+  padding-bottom: 3em;
+}
+
+.row {
+  display: flex;
+  width: 600px;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.col-header {
+  width: 150px;
+  box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
+  border-radius: 20px;
+  padding: 0.8rem 1rem;
+  color: #fff;
+}
+
+.item {
+  width: 150px;
+  height: 66px;
+  border: 1px solid white;
+  box-shadow: 0px 4px 15px #67dcda;
+  border-radius: 20px;
+  background: linear-gradient(258.99deg, #6feeec -4.34%, #66dad8 60.7%);
+  padding: 0.8rem 1rem;
+  color: white;
+  text-align: center;
+  cursor: grab;
+}
+
+.item:active {
+  cursor: grabbing;
+}
+
+.placeholder {
+  width: 150px;
+  height: 66px;
+}
+
+.start {
+  background: linear-gradient(90deg, #ff85e4 0%, #229efd 179.25%);
+}
+
+.progress {
+  background: linear-gradient(90deg, #209cff 0%, #68e0cf 100%);
+}
+
+.done {
+  background: linear-gradient(90deg, #84fab0 0%, #8fd3f4 100%);
+}
+
+.hold {
+  border: 3px solid white;
+}
+
+.hide {
+  display: none;
+}
+
+.hovered {
+  border-top: 2px dotted #ff85e4;
+}
+
+/* Slider | Проект 3 */
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+.slider {
+  text-decoration-line: underline;
+  text-decoration-color: #6feeec;
+}
+
+.body3 {
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  position: relative;
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+.sidebar {
+  height: 100%;
+  width: 35%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.5s ease-in-out;
+}
+
+.sidebar > div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.sidebar h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  margin-top: -30px;
+}
+
+.main-slide {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 35%;
+  width: 65%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.main-slide > div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+}
+
+button {
+  background-color: #fff;
+  border: none;
+  color: #aaa;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 15px;
+}
+
+button:hover {
+  color: #222;
+}
+
+button:focus {
+  outline: none;
+}
+
+.container .controls button {
+  position: absolute;
+  left: 35%;
+  top: 50%;
+  z-index: 100;
+}
+
+.container .controls .down-button {
+  transform: translateX(-100%);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.container .controls .up-button {
+  transform: translateY(-100%);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+/* Project 4 */
+.desc {
+  text-decoration-line: underline;
+  text-decoration-color: #6feeec;
+  top: 1.5em;
+  position: absolute;
+  transform: translate(0, -50%);
+  color: white;
+}
+.body4 {
+  background-color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding-top: 5em;
+  position: relative;
+}
+
+.container4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 475px;
+  flex-wrap: wrap;
+}
+
+.square {
+  width: 16px;
+  height: 16px;
+  background: #1d1d1d;
+  margin: 2px;
+  box-shadow: 0 0 2px #000;
+  transition: 3s ease;
+}
+
+.square:hover {
+  transition-duration: 0s;
+}
